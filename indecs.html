@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        ul{
+           list-style: none;
+           
+        }
+        .active{
+            
+            text-decoration:solid;
+            font-weight: bold;
+        }
+        .active:hover{
+            box-shadow:0 10px 15px rgba(0,0,0,.3); 
+            transform: scale(1.03);
+        }
+        .navbar{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+           justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+            color: whitesmoke;
+           
+        }
+        .nav-links{
+            display: flex;
+            align-items: center;
+        }
+       .nav-links li{
+        margin: 0 30px;
+        
+       }
+      
+        
+        header{
+            width: 100vw;
+            height:100vh;
+            background-image: url("https://terrainnexplorer.com/wp-content/uploads/2020/07/ksp_4171-5-1-1024x819.jpg");
+            background-position: bottom;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .header-content{
+            margin-bottom: 150px;
+            color: whitesmoke;
+            text-align: center;
+        }
+        .header-content h2{
+            font-size: 4vmin;
+
+        }
+        .line{
+            width: 150px;
+            height: 4px;
+            background: #fc036b;
+            margin: 10px auto;
+            border-radius: 5px;
+
+        }
+        .header-content h1{
+            font-size: 7vmin;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        .ctn{
+            padding: 8px 15px;
+            background: #fc036b;
+            border-radius: 30px;
+            color: whitesmoke;
+        }
+        .menu-btn{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        .container{
+    background:whitesmoke;
+    width: 80%;
+    margin:80px auto;
+}
+
+.container .heading{
+    text-align: center;
+    color:#49497e;  
+    font-size: 4vmin;
+}
+
+.container .box-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container .box-container .box{
+    
+    text-align: center;
+    padding:30px 30px;
+    display: flex;
+    flex-direction:column;
+}
+
+.container .box-container .box img{
+   padding: 10px;
+   width: auto;
+ 
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 3vmin;
+    padding:10px 0;
+    margin: 20px auto;
+}
+
+.container .box-container .box p{
+    color:#484872;
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 0px 0px;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#fc036b;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px ;
+    width: 100px;
+    margin: auto;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/15700444/pexels-photo-15700444/free-photo-of-tower-of-hindu-temple.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content{
+    width: 50%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1{
+    font-size: 7vmin;
+    
+}
+.explore-content .line{
+    margin-bottom:50px;
+}
+.explore-content p{
+    color: rgb(220, 213, 213);
+}
+.explore-content .ctn{
+    margin-top: 40px;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+
+}
+.head{
+    font-size: 30px;
+    color: #444;
+    text-align: center;
+}
+p{
+    font-size: 15px;
+    line-height: 15px;
+    padding: 10px ;
+    margin-left: 10px;
+    color: #444;
+}
+button{
+    width: 120px;
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fc036b;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.card{
+    width:200px;
+    height:230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1{
+    background-image: url("https://images.pexels.com/photos/9370987/pexels-photo-9370987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.card2{
+    background-image: url("https://images.pexels.com/photos/5201146/pexels-photo-5201146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.card3{
+    background-image: url("https://images.pexels.com/photos/17352591/pexels-photo-17352591/free-photo-of-mysore-palace-seen-through-arch-in-karnataka-india.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.card4{
+    background-image: url("https://media.istockphoto.com/id/1322430739/photo/hindu-temple.jpg?s=2048x2048&w=is&k=20&c=yFcAIxKHVt23Fe5LbslZetN-CTS7NOVXiDuB7eaV22k=");
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.footer{
+   width: auto;
+   height: 70%;
+    padding: 20px 80px ;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+}
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+       
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+       <h1 class="logo">ADVENTURE</h1>
+       <ul class=" nav-links">
+            <li class="active"><a href="http://127.0.0.1:3000/homw.html"> Home</a></li>
+            <li><a href="http://127.0.0.1:3000/hell.html"> About</a></li>
+            <li><a href="http://127.0.0.1:3000/exp.html"> Explore</a></li>
+            <li class="ctn"><a href="http://127.0.0.1:3000/exp.html"> Contact</a></li>
+        </ul> 
+     
+    </nav>
+    <header>
+    <div class="header-content">
+        <h2> Decode the ancient secrets marks in stone</h2>
+        <div class="line"></div>
+        <h1>HISTORICAL PLACES OF INDIA</h1>
+        <a href="http://127.0.0.1:3000/learn.html" class="ctn">Learn more</a>
+    </div>
+   
+</header>
+<div class="container">
+
+    <h1 class="heading"> HISTORICAL MONUMENTS</h1>
+    <div class="line"></div>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://media.istockphoto.com/id/1354810673/photo/taj-mahal-mausoleum-in-agra.jpg?s=2048x2048&w=is&k=20&c=IsL7th2memvF-9WYHZmL5GNoVD7XQ4iPLM4spOGiXCY=" alt="" width="200px"height="400">
+            <h3>Taj Mahal</h3>
+            <p>The Mughal Emperor Shah Jahan built this mausoleum for his darling wife,
+                 Mumtaz Mahal, who passed away while giving birth to their 14th child. 
+                 A testimony to love, 
+                this historical monument in India looks stunning even from afar.</p>
+            <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="https://images.pexels.com/photos/2415399/pexels-photo-2415399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""width="200px"height="400">
+            <h3>Humayun’s Tomb</h3>
+            <p>Humayun’s Tomb was one of the ancient monuments in India and
+                 its construction happened under the supervision of the Mughal Empire. 
+                It was commissioned by the then-Mughal ruler King Akbar.</p>
+            <a href="https://en.wikipedia.org/wiki/Humayun%27s_Tomb" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="https://images.pexels.com/photos/25328674/pexels-photo-25328674/free-photo-of-ulun-danu-beratan-temple-in-bali-indonesia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""width="200px"height="400">
+            <h3>Mamleshwar Temple</h3>
+            <p>The historic Mamal Temple is  famous monuments of India was
+                 built in the 12th century. The temple is believed to have been guarded by Lord 
+                  Ganesha who would not
+                 allow  to enter the sanctum of the temple.</p>
+            <a href="https://en.wikipedia.org/wiki/Omkareshwar_Temple" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Basilica_of_bom_jesus_-_Front_View.jpg" alt=""width="200px"height="400">
+            <h3> Basilica of Bom Jesus</h3>
+            <p>The Basilica of Bom Jesus is the most famous Roman Catholic structure in India. 
+
+                The church is built in the beautiful baroque style and is the
+                 only church in Goa not to have a plastered exterior. </p>
+            <a href="https://en.wikipedia.org/wiki/Basilica_of_Bom_Jesus" class="btn">read more</a>
+        </div>
+
+        
+
+    </div>
+
+</div>
+<section class="explore">
+     <div class="explore-content"><h1> A VISUAL TOUR OF ICONIC MONUMENTS</h1>
+        <div class="line"></div>
+        
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, 
+        ut dolorem autem at quisquam, rem iure provident impedit odit cumque temporibus 
+        incidunt tenetur alias consequuntur, architecto est dolor voluptate quod.</p>
+        <a href="http://127.0.0.1:3000/learn.html"class="ctn"> Learn more</a>
+    </div> 
+</section>
+
+<div class="container">
+<div class="row">
+    <div class="col">
+        
+        <h1 class="head">SEE MORE PLACES </h1>
+        <div class="line"></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio 
+            deleniti facilis id hic tenetur incidunt minus soluta provident 
+            porro quas vero ipsa amet consequatur autem adipisci blanditiis, 
+            odit maxime numquam.</p>
+            <button type="button"> <a href="http://127.0.0.1:3000/learn.html">Learn more</a></button>
+    </div>
+    <div class="col">
+            <div class="card card1"> </div>
+            <div class="card card2"> </div>
+            <div class="card card3"> </div>
+            <div class="card card4"></div>
+    </div>
+</div>
+</div>
+<section class="footer">
+    
+        <p>Author: Hege Refsnes<br>
+            Copyright © 2024 Search Engine Journal. All rights reserved. Published by Alpha Brand Media.</p>
+    
+</section>        
+</body>
+</html>
